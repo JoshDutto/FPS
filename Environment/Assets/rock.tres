@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://iafa7e6dce01"]
+
+[ext_resource type="Texture2D" uid="uid://dkddijqkxh4gr" path="res://Environment/Assets/jungle_stone_d.jpg" id="1_svfnu"]
+
+[resource]
+albedo_texture = ExtResource("1_svfnu")
+uv1_scale = Vector3(0.755, 0.755, 0.755)
+uv2_triplanar = true
+uv2_world_triplanar = true
+texture_filter = 2

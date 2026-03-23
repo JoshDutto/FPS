@@ -1,0 +1,136 @@
+[gd_scene format=3 uid="uid://bqo3pk75sbp5u"]
+
+[ext_resource type="PackedScene" uid="uid://c6ks14caekbde" path="res://Environment/rock_boulder.tscn" id="1_aqk2v"]
+[ext_resource type="PackedScene" uid="uid://hsbbdreb64gg" path="res://Environment/rock_cliff.tscn" id="2_036b0"]
+[ext_resource type="PackedScene" uid="uid://b663u5rstlas8" path="res://Environment/rock_pillar.tscn" id="3_dwbse"]
+[ext_resource type="PackedScene" uid="uid://b1b6icoacgqmd" path="res://Environment/sand.tscn" id="4_pkg7o"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_aqk2v"]
+
+[sub_resource type="Sky" id="Sky_036b0"]
+sky_material = SubResource("ProceduralSkyMaterial_aqk2v")
+
+[sub_resource type="Environment" id="Environment_dwbse"]
+background_mode = 2
+sky = SubResource("Sky_036b0")
+
+[sub_resource type="Animation" id="Animation_aqk2v"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Camera3D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(-0.43600464, 4.209944, 33.227463)]
+}
+
+[sub_resource type="Animation" id="Animation_036b0"]
+resource_name = "fly"
+length = 10.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Camera3D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 10),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(-0.43600464, 4.209944, 33.227463), Vector3(60.504517, 4.209944, 12.044762)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_dwbse"]
+_data = {
+&"RESET": SubResource("Animation_aqk2v"),
+&"fly": SubResource("Animation_036b0")
+}
+
+[node name="World" type="Node3D" unique_id=1182798985]
+
+[node name="Environment" type="Node3D" parent="." unique_id=1426988209]
+
+[node name="RockBoulder" parent="Environment" unique_id=154343432 instance=ExtResource("1_aqk2v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.119799, 3, 36.121864)
+
+[node name="RockBoulder2" parent="Environment" unique_id=1611525300 instance=ExtResource("1_aqk2v")]
+transform = Transform3D(0.41450274, 0, -0.9100482, -0.5800253, 0.77056885, -0.26418608, 0.7012548, 0.6373568, 0.3194029, 45.119797, 1.8726768, 43.121864)
+
+[node name="RockBoulder3" parent="Environment" unique_id=1616317987 instance=ExtResource("1_aqk2v")]
+transform = Transform3D(-0.30860302, 0.6752612, -0.66991544, -0.6426555, 0.3712126, 0.6702203, 0.7012548, 0.6373567, 0.31940284, 65.1198, 0.21899033, 23.121864)
+
+[node name="RockCliff" parent="Environment" unique_id=682807754 instance=ExtResource("2_036b0")]
+transform = Transform3D(0.6434146, 0, 0, 0, 0.8691944, 0, 0, 0, 0.82647526, 4.060623, -1, 8.877235)
+
+[node name="RockCliff2" parent="Environment" unique_id=1241798500 instance=ExtResource("2_036b0")]
+transform = Transform3D(0.6434146, 0, 0, 0, 0.47300568, 0, 0, 0, 0.82647526, 92.49224, 0.21656227, 8.877235)
+
+[node name="RockPillar" parent="Environment" unique_id=657248183 instance=ExtResource("3_dwbse")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 41.0832, 3, 0)
+
+[node name="RockPillar2" parent="Environment" unique_id=119189761 instance=ExtResource("3_dwbse")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 76.0832, 3, 39)
+
+[node name="Sand" parent="Environment" unique_id=1755596512 instance=ExtResource("4_pkg7o")]
+
+[node name="Sand2" parent="Environment" unique_id=1767888396 instance=ExtResource("4_pkg7o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.09589195, 0, 20)
+
+[node name="Sand3" parent="Environment" unique_id=1941758447 instance=ExtResource("4_pkg7o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.904108, 0, 20)
+
+[node name="Sand5" parent="Environment" unique_id=897966743 instance=ExtResource("4_pkg7o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.904108, 0, 40)
+
+[node name="Sand7" parent="Environment" unique_id=1522260373 instance=ExtResource("4_pkg7o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.904106, 0, 40)
+
+[node name="Sand10" parent="Environment" unique_id=1105286668 instance=ExtResource("4_pkg7o")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 69.904106, 0, 30)
+
+[node name="Sand8" parent="Environment" unique_id=1348910029 instance=ExtResource("4_pkg7o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.904106, 0, 20)
+
+[node name="Sand9" parent="Environment" unique_id=433247914 instance=ExtResource("4_pkg7o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.904106, 0, 0)
+
+[node name="Sand6" parent="Environment" unique_id=953841117 instance=ExtResource("4_pkg7o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.09589195, 0, 40)
+
+[node name="Sand4" parent="Environment" unique_id=634995475 instance=ExtResource("4_pkg7o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.904108, 0, 0)
+
+[node name="Sand11" parent="Environment" unique_id=1375733849 instance=ExtResource("4_pkg7o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 59.947273, 0.057418823, 0.049861908)
+
+[node name="Sand12" parent="Environment" unique_id=1711555590 instance=ExtResource("4_pkg7o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 99.85138, 0.057418823, 0.049861908)
+
+[node name="Sand14" parent="Environment" unique_id=1696283211 instance=ExtResource("4_pkg7o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 99.85138, 0.057418823, 20.049862)
+
+[node name="Sand15" parent="Environment" unique_id=2012393343 instance=ExtResource("4_pkg7o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 99.85138, 0.057418823, 40.049862)
+
+[node name="Sand13" parent="Environment" unique_id=58743565 instance=ExtResource("4_pkg7o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 79.85138, 0.057418823, 0.049861908)
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1731685571]
+transform = Transform3D(0.56512547, 0, -0.825005, 0, 1, 0, 0.825005, 0, 0.56512547, -0.43600464, 4.209944, 33.227463)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=346913960]
+environment = SubResource("Environment_dwbse")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1768232755]
+transform = Transform3D(1, 0, 0, 0, -0.73389584, 0.67926204, 0, -0.67926204, -0.73389584, 59, 55.238464, 0)
+shadow_enabled = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="DirectionalLight3D" unique_id=846845399]
+libraries/ = SubResource("AnimationLibrary_dwbse")
+autoplay = &"fly"
