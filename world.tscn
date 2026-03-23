@@ -107,10 +107,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.09589195, 0, 40)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.904108, 0, 0)
 
 [node name="Sand11" parent="Environment" unique_id=1375733849 instance=ExtResource("4_pkg7o")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 59.947273, 0.057418823, 0.049861908)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 59.907, 0, 0)
 
 [node name="Sand12" parent="Environment" unique_id=1711555590 instance=ExtResource("4_pkg7o")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 99.85138, 0.057418823, 0.049861908)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 99.901, 0, 0)
 
 [node name="Sand14" parent="Environment" unique_id=1696283211 instance=ExtResource("4_pkg7o")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 99.85138, 0.057418823, 20.049862)
@@ -119,7 +119,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 99.85138, 0.057418823, 20.049
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 99.85138, 0.057418823, 40.049862)
 
 [node name="Sand13" parent="Environment" unique_id=58743565 instance=ExtResource("4_pkg7o")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 79.85138, 0.057418823, 0.049861908)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 79.901, 0, 0)
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=1731685571]
 transform = Transform3D(0.56512547, 0, -0.825005, 0, 1, 0, 0.825005, 0, 0.56512547, -0.43600464, 4.209944, 33.227463)
