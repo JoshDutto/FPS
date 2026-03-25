@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://hsbbdreb64gg" path="res://Environment/rock_cliff.tscn" id="2_036b0"]
 [ext_resource type="PackedScene" uid="uid://b663u5rstlas8" path="res://Environment/rock_pillar.tscn" id="3_dwbse"]
 [ext_resource type="PackedScene" uid="uid://b1b6icoacgqmd" path="res://Environment/sand.tscn" id="4_pkg7o"]
+[ext_resource type="PackedScene" uid="uid://c7nyqyl3k3mlc" path="res://characters/player/player.tscn" id="5_036b0"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_aqk2v"]
 
@@ -16,35 +17,11 @@ sky = SubResource("Sky_036b0")
 
 [sub_resource type="Animation" id="Animation_aqk2v"]
 length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("../Camera3D:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector3(-0.43600464, 4.209944, 33.227463)]
-}
 
 [sub_resource type="Animation" id="Animation_036b0"]
 resource_name = "fly"
 length = 10.0
 loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("../Camera3D:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 10),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector3(-0.43600464, 4.209944, 33.227463), Vector3(60.504517, 4.209944, 12.044762)]
-}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_dwbse"]
 _data = {
@@ -121,9 +98,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 99.85138, 0.057418823, 40.049
 [node name="Sand13" parent="Environment" unique_id=58743565 instance=ExtResource("4_pkg7o")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 79.901, 0, 0)
 
-[node name="Camera3D" type="Camera3D" parent="." unique_id=1731685571]
-transform = Transform3D(0.56512547, 0, -0.825005, 0, 1, 0, 0.825005, 0, 0.56512547, -0.43600464, 4.209944, 33.227463)
-
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=346913960]
 environment = SubResource("Environment_dwbse")
 
@@ -134,3 +108,6 @@ shadow_enabled = true
 [node name="AnimationPlayer" type="AnimationPlayer" parent="DirectionalLight3D" unique_id=846845399]
 libraries/ = SubResource("AnimationLibrary_dwbse")
 autoplay = &"fly"
+
+[node name="Player" parent="." unique_id=1879806697 instance=ExtResource("5_036b0")]
+transform = Transform3D(-0.38891497, 0, -0.92127365, 0, 1, 0, 0.92127365, 0, -0.38891497, 19.160233, 0.9458797, 0)
