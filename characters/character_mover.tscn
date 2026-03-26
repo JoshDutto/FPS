@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://1o0m0fhcm11v"]
+
+[ext_resource type="Script" uid="uid://jrykgk7fsevq" path="res://characters/character_mover.gd" id="1_slvwx"]
+
+[node name="CharacterMover" type="Node3D" unique_id=1389627536]
+script = ExtResource("1_slvwx")
+jump_force = 13.5
+gravity = 40.0
+stop_drag = 0.4
