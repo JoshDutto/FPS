@@ -4,12 +4,11 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dry68cqe1lvhh"
-path="res://.godot/imported/M1Garand.blend-d02ffb1f9eac56e2cad857df17fb97fc.scn"
+valid=false
 
 [deps]
 
 source_file="res://Models/M1Garand.blend"
-dest_files=["res://.godot/imported/M1Garand.blend-d02ffb1f9eac56e2cad857df17fb97fc.scn"]
 
 [params]
 
