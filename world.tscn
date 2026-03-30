@@ -90,10 +90,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 59.907, 0, 0)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 99.901, 0, 0)
 
 [node name="Sand14" parent="Environment" unique_id=1696283211 instance=ExtResource("4_pkg7o")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 99.85138, 0.057418823, 20.049862)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 99.9, 0, 20)
 
 [node name="Sand15" parent="Environment" unique_id=2012393343 instance=ExtResource("4_pkg7o")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 99.85138, 0.057418823, 40.049862)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 99.901, 0, 40)
 
 [node name="Sand13" parent="Environment" unique_id=58743565 instance=ExtResource("4_pkg7o")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 79.901, 0, 0)
