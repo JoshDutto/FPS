@@ -3,11 +3,20 @@
 [ext_resource type="Script" uid="uid://4ih5wm04spfm" path="res://characters/player/camera_3d.gd" id="1_508ok"]
 [ext_resource type="Script" uid="uid://d183d8j8j17dv" path="res://characters/player/player.gd" id="1_xxgcw"]
 [ext_resource type="PackedScene" uid="uid://1o0m0fhcm11v" path="res://characters/character_mover.tscn" id="3_exd8k"]
+[ext_resource type="Script" uid="uid://cw8d35p3updrm" path="res://characters/player/weapon_manager.gd" id="3_ixbpm"]
 [ext_resource type="PackedScene" uid="uid://cf88t8jd3jsxh" path="res://characters/health_manager.tscn" id="4_5dc8e"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_b886q"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_508ok"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_c6leb"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_dirf7"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_idpv6"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_rpf03"]
 
 [node name="Player" type="CharacterBody3D" unique_id=1879806697]
 collision_layer = 2
@@ -25,6 +34,30 @@ mesh = SubResource("CapsuleMesh_508ok")
 [node name="Camera3D" type="Camera3D" parent="." unique_id=2014799366]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
 script = ExtResource("1_508ok")
+
+[node name="WeaponManager" type="Node3D" parent="Camera3D" unique_id=1061243025]
+transform = Transform3D(0.5501514, 0, 0, 0, 0.47614992, 0, 0, 0, 4.43562, 0.49085635, -0.3566792, -1.1030991)
+script = ExtResource("3_ixbpm")
+
+[node name="Weapons" type="Node3D" parent="Camera3D/WeaponManager" unique_id=365803959]
+
+[node name="Machete" type="MeshInstance3D" parent="Camera3D/WeaponManager/Weapons" unique_id=856401474]
+transform = Transform3D(0.734304, 0, 0, 0, 0.734304, 0, 0, 0, 0.734304, 0, -0.3303399, 0)
+mesh = SubResource("BoxMesh_c6leb")
+
+[node name="MachineGun" type="MeshInstance3D" parent="Camera3D/WeaponManager/Weapons" unique_id=1457976647]
+transform = Transform3D(0.734304, 0, 0, 0, 0.734304, 0, 0, 0, 0.734304, 0, -0.3303399, 0)
+visible = false
+mesh = SubResource("SphereMesh_dirf7")
+
+[node name="Shotgun" type="MeshInstance3D" parent="Camera3D/WeaponManager/Weapons" unique_id=886082760]
+transform = Transform3D(0.734304, 0, 0, 0, 0.734304, 0, 0, 0, 0.734304, 0, -0.3303399, 0)
+visible = false
+mesh = SubResource("CapsuleMesh_idpv6")
+
+[node name="RPG" type="MeshInstance3D" parent="Camera3D/WeaponManager/Weapons" unique_id=449836625]
+transform = Transform3D(0.734304, 0, 0, 0, 0.734304, 0, 0, 0, 0.734304, 0, -0.3303399, 0)
+mesh = SubResource("BoxMesh_rpf03")
 
 [node name="CharacterMover" parent="." unique_id=1389627536 instance=ExtResource("3_exd8k")]
 
