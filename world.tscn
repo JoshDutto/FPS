@@ -54,49 +54,113 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 41.0832, 3, 0)
 [node name="RockPillar2" parent="Environment" unique_id=119189761 instance=ExtResource("3_dwbse")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 76.0832, 3, 39)
 
-[node name="Sand" parent="Environment" unique_id=1755596512 instance=ExtResource("4_pkg7o")]
+[node name="Sand1" parent="Environment" unique_id=1105286668 instance=ExtResource("4_pkg7o")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 89.904106, 0, 30)
 
-[node name="Sand2" parent="Environment" unique_id=1767888396 instance=ExtResource("4_pkg7o")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.09589195, 0, 20)
+[node name="Sand2" parent="Environment" unique_id=1885737903 instance=ExtResource("4_pkg7o")]
+transform = Transform3D(-2, 0, -1.7484555e-07, 0, 2, 0, 1.7484555e-07, 0, -2, 89.904106, 0, -10)
 
-[node name="Sand3" parent="Environment" unique_id=1941758447 instance=ExtResource("4_pkg7o")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.904108, 0, 20)
+[node name="Sand3" parent="Environment" unique_id=1755596512 instance=ExtResource("4_pkg7o")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 89.904106, 0, -50)
 
-[node name="Sand5" parent="Environment" unique_id=897966743 instance=ExtResource("4_pkg7o")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.904108, 0, 40)
+[node name="Sand4" parent="Environment" unique_id=833290673 instance=ExtResource("4_pkg7o")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 49.904106, 0, -50)
 
-[node name="Sand7" parent="Environment" unique_id=1522260373 instance=ExtResource("4_pkg7o")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.904106, 0, 40)
+[node name="Sand5" parent="Environment" unique_id=551335825 instance=ExtResource("4_pkg7o")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 9.904106, 0, -50)
 
-[node name="Sand10" parent="Environment" unique_id=1105286668 instance=ExtResource("4_pkg7o")]
-transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 69.904106, 0, 30)
+[node name="Sand6" parent="Environment" unique_id=579089282 instance=ExtResource("4_pkg7o")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 49.904106, 0, -10)
 
-[node name="Sand8" parent="Environment" unique_id=1348910029 instance=ExtResource("4_pkg7o")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.904106, 0, 20)
+[node name="Sand7" parent="Environment" unique_id=260738640 instance=ExtResource("4_pkg7o")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 9.904106, 0, -10)
 
-[node name="Sand9" parent="Environment" unique_id=433247914 instance=ExtResource("4_pkg7o")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.904106, 0, 0)
+[node name="Sand8" parent="Environment" unique_id=740361663 instance=ExtResource("4_pkg7o")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 49.904106, 0, 30)
 
-[node name="Sand6" parent="Environment" unique_id=953841117 instance=ExtResource("4_pkg7o")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.09589195, 0, 40)
+[node name="Sand9" parent="Environment" unique_id=178092848 instance=ExtResource("4_pkg7o")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 9.904106, 0, 30)
 
-[node name="Sand4" parent="Environment" unique_id=634995475 instance=ExtResource("4_pkg7o")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.904108, 0, 0)
+[node name="Sand10" parent="Environment" unique_id=1103212968 instance=ExtResource("4_pkg7o")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 89.904106, 0, -90)
 
-[node name="Sand11" parent="Environment" unique_id=1375733849 instance=ExtResource("4_pkg7o")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 59.907, 0, 0)
+[node name="Sand11" parent="Environment" unique_id=312096350 instance=ExtResource("4_pkg7o")]
+transform = Transform3D(-2, 0, -1.7484555e-07, 0, 2, 0, 1.7484555e-07, 0, -2, 89.904106, 0, -130)
 
-[node name="Sand12" parent="Environment" unique_id=1711555590 instance=ExtResource("4_pkg7o")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 99.901, 0, 0)
+[node name="Sand12" parent="Environment" unique_id=478448308 instance=ExtResource("4_pkg7o")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 89.904106, 0, -170)
 
-[node name="Sand14" parent="Environment" unique_id=1696283211 instance=ExtResource("4_pkg7o")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 99.9, 0, 20)
+[node name="Sand13" parent="Environment" unique_id=1890135291 instance=ExtResource("4_pkg7o")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 49.904106, 0, -170)
 
-[node name="Sand15" parent="Environment" unique_id=2012393343 instance=ExtResource("4_pkg7o")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 99.901, 0, 40)
+[node name="Sand14" parent="Environment" unique_id=145733373 instance=ExtResource("4_pkg7o")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 9.904106, 0, -170)
 
-[node name="Sand13" parent="Environment" unique_id=58743565 instance=ExtResource("4_pkg7o")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 79.901, 0, 0)
+[node name="Sand15" parent="Environment" unique_id=1855192507 instance=ExtResource("4_pkg7o")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 49.904106, 0, -130)
+
+[node name="Sand16" parent="Environment" unique_id=2134739302 instance=ExtResource("4_pkg7o")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 9.904106, 0, -130)
+
+[node name="Sand17" parent="Environment" unique_id=1269369051 instance=ExtResource("4_pkg7o")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 49.904106, 0, -90)
+
+[node name="Sand18" parent="Environment" unique_id=1912201410 instance=ExtResource("4_pkg7o")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 9.904106, 0, -90)
+
+[node name="Sand19" parent="Environment" unique_id=375156382 instance=ExtResource("4_pkg7o")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 209.90411, 0, 30)
+
+[node name="Sand20" parent="Environment" unique_id=346471895 instance=ExtResource("4_pkg7o")]
+transform = Transform3D(-2, 0, -1.7484555e-07, 0, 2, 0, 1.7484555e-07, 0, -2, 209.90411, 0, -10)
+
+[node name="Sand21" parent="Environment" unique_id=235809504 instance=ExtResource("4_pkg7o")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 209.90411, 0, -50)
+
+[node name="Sand22" parent="Environment" unique_id=743837914 instance=ExtResource("4_pkg7o")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 169.90411, 0, -50)
+
+[node name="Sand23" parent="Environment" unique_id=1280123042 instance=ExtResource("4_pkg7o")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 129.90411, 0, -50)
+
+[node name="Sand24" parent="Environment" unique_id=332298710 instance=ExtResource("4_pkg7o")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 169.90411, 0, -10)
+
+[node name="Sand25" parent="Environment" unique_id=609625816 instance=ExtResource("4_pkg7o")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 129.90411, 0, -10)
+
+[node name="Sand26" parent="Environment" unique_id=797962095 instance=ExtResource("4_pkg7o")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 169.90411, 0, 30)
+
+[node name="Sand27" parent="Environment" unique_id=1932104402 instance=ExtResource("4_pkg7o")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 129.90411, 0, 30)
+
+[node name="Sand28" parent="Environment" unique_id=854593103 instance=ExtResource("4_pkg7o")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 209.90411, 0, -90)
+
+[node name="Sand29" parent="Environment" unique_id=1080079388 instance=ExtResource("4_pkg7o")]
+transform = Transform3D(-2, 0, -1.7484555e-07, 0, 2, 0, 1.7484555e-07, 0, -2, 209.90411, 0, -130)
+
+[node name="Sand30" parent="Environment" unique_id=447048580 instance=ExtResource("4_pkg7o")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 209.90411, 0, -170)
+
+[node name="Sand31" parent="Environment" unique_id=34309878 instance=ExtResource("4_pkg7o")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 169.90411, 0, -170)
+
+[node name="Sand32" parent="Environment" unique_id=1311232086 instance=ExtResource("4_pkg7o")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 129.90411, 0, -170)
+
+[node name="Sand33" parent="Environment" unique_id=1996106910 instance=ExtResource("4_pkg7o")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 169.90411, 0, -130)
+
+[node name="Sand34" parent="Environment" unique_id=60705837 instance=ExtResource("4_pkg7o")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 129.90411, 0, -130)
+
+[node name="Sand35" parent="Environment" unique_id=1945026219 instance=ExtResource("4_pkg7o")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 169.90411, 0, -90)
+
+[node name="Sand36" parent="Environment" unique_id=498685920 instance=ExtResource("4_pkg7o")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 129.90411, 0, -90)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=346913960]
 environment = SubResource("Environment_dwbse")
