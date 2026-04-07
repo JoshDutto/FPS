@@ -1,8 +1,9 @@
 extends CharacterBody3D
 
 @onready var camera_3d = $Camera3D
-@onready var character_mover: Node3D = $CharacterMover
+@onready var character_mover = $CharacterMover
 @onready var health_manager = $HealthManager
+@onready var weapon_manager = $Camera3D/WeaponManager
 
 @export var mouse_sensitivity_h = 0.15
 @export var mouse_sensitivity_v = 0.10
@@ -21,8 +22,13 @@ func _input(event):
 	if event is InputEventMouseMotion:
 		rotation_degrees.y -= event.relative.x * mouse_sensitivity_h
 		camera_3d.rotation_degrees.x -= event.relative.y * mouse_sensitivity_v
-		camera_3d.rotation_degrees.x = clamp(camera_3d.rotation_degrees.x, -90, 90)
-	
+		camera_3d.rotation_degrees.x = clamp(camera_3d.rotation_degrees.x, -90, 85)
+	if event is InputEventMouseButton and event.pressed:
+		if event.button_index == MOUSE_BUTTON_WHEEL_UP:
+			weapon_manager.switch_to_previous_weapon()
+		if event.button_index == MOUSE_BUTTON_WHEEL_DOWN:
+			weapon_manager.switch_to_next_weapon()
+			
 func _process(delta):
 	if Input.is_action_just_pressed("quit"):
 		get_tree().quit()
