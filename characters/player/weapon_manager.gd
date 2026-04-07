@@ -13,10 +13,10 @@ func _ready ():
 
 func disable_all_weapons ():
 	for weapon in weapons:
-		if has_method("set_active"):
-			weapon.set_active = false
+		if weapon.has_method("set_active"):
+			weapon.set_active(false)
 		else:
-			weapon.hide()
+			weapon.hide() # We're entering the else statement every time, so guns aren't visible in game
 	
 func switch_to_previous_weapon():
 	for i in range (weapons.size()):
@@ -31,15 +31,15 @@ func switch_to_next_weapon():
 			break
 
 func switch_to_weapon_slot(slot_ind: int) -> bool:
-	if slot_ind > weapons.size() -1 or slot_ind < 0: 
+	if slot_ind >= weapons.size() or slot_ind < 0: 
 		return false
 	if weapons_unlocked.size() == 0 or !weapons_unlocked[slot_ind]:
 		return false
 	disable_all_weapons()
 	cur_slot = slot_ind
 	cur_weapon = weapons[cur_slot]
-	if has_method("set_active"):
-		cur_weapon.set_active = true
+	if cur_weapon.has_method("set_active"):
+		cur_weapon.set_active(true)
 	else:
 		cur_weapon.show()
 	return true
