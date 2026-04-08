@@ -8,6 +8,13 @@ extends CharacterBody3D
 @export var mouse_sensitivity_h = 0.15
 @export var mouse_sensitivity_v = 0.10
 
+const HOTKEYS = {
+	KEY_1: 0,
+	KEY_2: 1,
+	KEY_3: 2,
+	KEY_4: 3
+}
+
 var dead = false
 
 func _ready():
@@ -28,6 +35,8 @@ func _input(event):
 			weapon_manager.switch_to_previous_weapon()
 		if event.button_index == MOUSE_BUTTON_WHEEL_DOWN:
 			weapon_manager.switch_to_next_weapon()
+	if event is InputEventKey and event.pressed and event.keycode in HOTKEYS:
+		weapon_manager.switch_to_weapon_slot(HOTKEYS[event.keycode])
 			
 func _process(delta):
 	if Input.is_action_just_pressed("quit"):

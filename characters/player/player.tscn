@@ -47,17 +47,14 @@ mesh = SubResource("BoxMesh_c6leb")
 
 [node name="MachineGun" type="MeshInstance3D" parent="Camera3D/WeaponManager/Weapons" unique_id=1457976647]
 transform = Transform3D(0.734304, 0, 0, 0, 0.734304, 0, 0, 0, 0.31970862, 0, 0.012405634, 0.08447263)
-visible = false
 mesh = SubResource("SphereMesh_dirf7")
 
 [node name="Shotgun" type="MeshInstance3D" parent="Camera3D/WeaponManager/Weapons" unique_id=886082760]
 transform = Transform3D(0.734304, 0, 0, 0, 0.28958228, 0, 0, 0, 0.27341062, 0, -0.012622833, 0.061172053)
-visible = false
 mesh = SubResource("CapsuleMesh_idpv6")
 
 [node name="RPG" type="MeshInstance3D" parent="Camera3D/WeaponManager/Weapons" unique_id=449836625]
 transform = Transform3D(0.3908693, 0, 0, 0, 0.46216765, 0, 0, 0, 0.26910284, 0, 0.35229826, 0.070374474)
-visible = false
 mesh = SubResource("BoxMesh_rpf03")
 
 [node name="CharacterMover" parent="." unique_id=1389627536 instance=ExtResource("3_exd8k")]
