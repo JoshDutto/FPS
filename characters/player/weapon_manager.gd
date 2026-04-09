@@ -9,14 +9,14 @@ var cur_weapon = null
 func _ready ():
 	disable_all_weapons()
 	for i in range(weapons.size()):
-		weapons_unlocked.append(false)
+		weapons_unlocked.append(true)
 
 func disable_all_weapons ():
 	for weapon in weapons:
 		if weapon.has_method("set_active"):
 			weapon.set_active(false)
 		else:
-			weapon.hide() # We're entering the else statement every time, so guns aren't visible in game
+			weapon.hide() # We're entering the else statement every time, so guns aren't visible in game INITIALLY
 	
 func switch_to_previous_weapon():
 	for i in range (weapons.size()):
