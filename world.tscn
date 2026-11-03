@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://b663u5rstlas8" path="res://Environment/rock_pillar.tscn" id="3_dwbse"]
 [ext_resource type="PackedScene" uid="uid://b1b6icoacgqmd" path="res://Environment/sand.tscn" id="4_pkg7o"]
 [ext_resource type="PackedScene" uid="uid://c7nyqyl3k3mlc" path="res://characters/player/player.tscn" id="5_036b0"]
+[ext_resource type="PackedScene" uid="uid://c8g2igd1qxan1" path="res://Environment/Assets/Stump.glb" id="6_dwbse"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_aqk2v"]
 
@@ -175,3 +176,6 @@ autoplay = &"fly"
 
 [node name="Player" parent="." unique_id=1879806697 instance=ExtResource("5_036b0")]
 transform = Transform3D(-0.38891497, 0, -0.92127365, 0, 1, 0, 0.92127365, 0, -0.38891497, 19.160233, 0.9458797, 0)
+
+[node name="Stump" parent="." unique_id=980885516 instance=ExtResource("6_dwbse")]
+transform = Transform3D(0.385, 0, 0, 0, 0.385, 0, 0, 0, 0.385, 72, 0, -12)
