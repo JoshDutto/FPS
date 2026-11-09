@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://b663u5rstlas8" path="res://Environment/rock_pillar.tscn" id="3_dwbse"]
 [ext_resource type="PackedScene" uid="uid://b1b6icoacgqmd" path="res://Environment/sand.tscn" id="4_pkg7o"]
 [ext_resource type="PackedScene" uid="uid://c7nyqyl3k3mlc" path="res://characters/player/player.tscn" id="5_036b0"]
+[ext_resource type="PackedScene" uid="uid://bubmxxfpuu56d" path="res://Environment/Assets/Lamppost.glb" id="5_pkg7o"]
 [ext_resource type="PackedScene" uid="uid://c8g2igd1qxan1" path="res://Environment/Assets/Stump.glb" id="6_dwbse"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_aqk2v"]
@@ -163,11 +164,22 @@ transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 169.90411, 0, -90)
 [node name="Sand36" parent="Environment" unique_id=498685920 instance=ExtResource("4_pkg7o")]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 129.90411, 0, -90)
 
+[node name="SpotLight3D" type="SpotLight3D" parent="Environment" unique_id=1026233970]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 43.104107, 6.2999997, -16)
+light_color = Color(1, 1, 0.4509804, 1)
+light_energy = 16.0
+light_indirect_energy = 16.0
+light_volumetric_fog_energy = 4.05
+shadow_enabled = true
+spot_range = 8.0
+spot_angle = 49.50804
+
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=346913960]
 environment = SubResource("Environment_dwbse")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1768232755]
 transform = Transform3D(1, 0, 0, 0, -0.73389584, 0.67926204, 0, -0.67926204, -0.73389584, 59, 55.238464, 0)
+visible = false
 shadow_enabled = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="DirectionalLight3D" unique_id=846845399]
@@ -175,7 +187,10 @@ libraries/ = SubResource("AnimationLibrary_dwbse")
 autoplay = &"fly"
 
 [node name="Player" parent="." unique_id=1879806697 instance=ExtResource("5_036b0")]
-transform = Transform3D(-0.38891497, 0, -0.92127365, 0, 1, 0, 0.92127365, 0, -0.38891497, 19.160233, 0.9458797, 0)
+transform = Transform3D(-0.38891497, 0, -0.92127365, 0, 1, 0, 0.92127365, 0, -0.38891497, 51.160233, 0.9458797, 0)
 
 [node name="Stump" parent="." unique_id=980885516 instance=ExtResource("6_dwbse")]
-transform = Transform3D(0.385, 0, 0, 0, 0.385, 0, 0, 0, 0.385, 72, 0, -12)
+transform = Transform3D(0.385, 0, 0, 0, 0.385, 0, 0, 0, 0.385, 56, 1, -12)
+
+[node name="Lamppost" parent="." unique_id=1137001035 instance=ExtResource("5_pkg7o")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, 42, 0, -16)
